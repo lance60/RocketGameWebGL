@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+  <div id="wrapper">
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -56,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/RocketGame.loader.js";
+      var loaderUrl = buildUrl + "/RocketGameWebGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/RocketGame.data",
-        frameworkUrl: buildUrl + "/RocketGame.framework.js",
-        codeUrl: buildUrl + "/RocketGame.wasm",
+        dataUrl: buildUrl + "/RocketGameWebGL.data",
+        frameworkUrl: buildUrl + "/RocketGameWebGL.framework.js",
+        codeUrl: buildUrl + "/RocketGameWebGL.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Lance Carrido",
         productName: "Rocket Game",
@@ -103,5 +104,16 @@
       };
       document.body.appendChild(script);
     </script>
+	<div id="informations">
+	 <p>
+		Controls: Spacebar - Thrust, Left/Right arrow keys - Turn left/right
+	 </p>
+	 <p>
+	  <a href="https://github.com/lance60/RocketGame" target="_blank">GitHub</a>
+	   <br>
+	  <a href="https://lance60.github.io/">Back to index</a>
+	 </p>
+	</div>
+	</div>
   </body>
 </html>
